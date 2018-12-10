@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.wltea.ik-analyzer:ik-analyzer:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wltea/ik-analyzer/ik-analyzer/unknown/ik-analyzer-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wltea/ik-analyzer/ik-analyzer/unknown/ik-analyzer-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wltea/ik-analyzer/ik-analyzer/unknown/ik-analyzer-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
