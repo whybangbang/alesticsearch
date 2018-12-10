@@ -9,6 +9,10 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+/**
+ * https://lucene.apache.org/core/7_2_1/core/org/apache/lucene/analysis/package-summary.html#package.description
+ * https://lucene.apache.org/core/7_2_1/core/org/apache/lucene/analysis/TokenStream.html
+ */
 public class Demo {
 
     String DEFAULT_FILED = "myField";

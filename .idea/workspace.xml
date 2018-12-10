@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57c2b180-e4d6-472d-953f-b297b9c18ada" name="Default" comment="" />
+    <list default="true" id="57c2b180-e4d6-472d-953f-b297b9c18ada" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_7_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jd/BaseOperation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jd/LoadData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/AllKindsQuery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/MemoryIndexTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/OurScores.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/RAMTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/README.MD" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/alesticsearch.iml" afterPath="$PROJECT_DIR$/alesticsearch.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jd/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jd/AppTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java" afterPath="$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jd/base/ReaderAndWriter.java" afterPath="$PROJECT_DIR$/src/test/java/com/jd/base/IndexOperation.java" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jd/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/jd/AppTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jd/base/ReaderAndWriter.class" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,21 +31,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReaderAndWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/ReaderAndWriter.java">
+      <file leaf-file-name="IndexOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/IndexOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/AppTest.java">
+      <file leaf-file-name="LoadData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jd/LoadData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            <state relative-caret-position="211">
+              <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllKindsQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/AllKindsQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="142" lean-forward="false" selection-start-line="4" selection-start-column="142" selection-end-line="4" selection-end-column="142" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OurScores.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/OurScores.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="103" lean-forward="false" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAnalyzer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/MyAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="13" column="88" lean-forward="false" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAMTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/RAMTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,124 +103,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Document.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/Document.java">
+      <file leaf-file-name="BaseOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jd/BaseOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="38" column="3" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+            <state relative-caret-position="190">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
-                <element signature="e#2705#2706#0" expanded="true" />
-                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringField.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/StringField.java">
+      <file leaf-file-name="MemoryIndexTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/MemoryIndexTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortedDocValuesField.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/SortedDocValuesField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11400">
-              <caret line="806" column="13" lean-forward="false" selection-start-line="806" selection-start-column="13" selection-end-line="806" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15255">
-              <caret line="1084" column="15" lean-forward="false" selection-start-line="1084" selection-start-column="15" selection-end-line="1084" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/FileUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7350">
-              <caret line="515" column="23" lean-forward="false" selection-start-line="515" selection-start-column="23" selection-end-line="515" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
               <folding>
-                <marker date="1530690273000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1530690273000" expanded="false" signature="145:995" ph="..." />
-                <marker date="1530690273000" expanded="true" signature="1253:1260" ph="{}" />
-                <marker date="1530690273000" expanded="true" signature="1342:1818" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="1902:2502" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="2563:2972" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="3033:3376" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="3454:3533" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="3629:3985" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="4091:4973" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="5080:5158" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="5220:5423" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="5520:5890" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="5988:6066" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="6151:7234" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="7275:7918" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="7965:8551" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="8617:8788" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="8880:8940" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="9058:9451" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="9533:9583" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="9691:10845" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="10956:11892" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="11988:12638" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="12723:12776" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="12887:13654" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="13768:15014" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="15102:15462" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="15538:15811" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="15886:16893" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="16953:17438" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="17529:17788" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="17862:17922" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="17999:18251" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="18333:18591" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="18656:18709" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="18802:19167" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="19243:19299" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="19402:19621" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="19707:19767" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="19856:20056" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="20157:20221" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="20305:20373" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="20493:20730" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="20833:20899" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="20966:21363" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="21436:21579" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="21662:21796" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="21878:22891" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="22962:23405" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="23462:24344" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="24411:24762" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="24824:25009" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="25077:25324" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="25391:25742" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="25804:25989" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="26057:26304" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="26373:26473" ph="{...}" />
-                <marker date="1530690273000" expanded="true" signature="26560:27033" ph="{...}" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +155,9 @@
       <find>ramBufferSizeMB</find>
       <find>setMaxBuffere</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -200,11 +184,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jd/analyzer/MyAnalyzer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/ReaderAndWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jd/TestData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jd/AppTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/MemoryIndexTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/ReaderAndWriter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/IndexAndWriter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/RAMTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jd/BaseOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jd/LoadData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/README.MD" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/IndexOperation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/AllKindsQuery.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jd/base/OurScores.java" />
       </list>
     </option>
   </component>
@@ -235,7 +229,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="683" />
@@ -281,6 +275,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -297,9 +292,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,6 +348,24 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alesticsearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alesticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jd" type="462c0819:PsiDirectoryNode" />
+              <item name="analyzer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alesticsearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alesticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jd" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alesticsearch" type="b2602c69:ProjectViewProjectNode" />
@@ -443,31 +456,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.test">
+  <component name="RunManager" selected="JUnit.IndexOperation.read">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jd.App" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="alesticsearch" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -483,19 +477,19 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IndexOperation.merge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.jd.*" />
+          <option name="PATTERN" value="com.jd.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="alesticsearch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jd" />
-      <option name="MAIN_CLASS_NAME" value="com.jd.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
+      <option name="PACKAGE_NAME" value="com.jd.base" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.base.IndexOperation" />
+      <option name="METHOD_NAME" value="merge" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -508,19 +502,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="AppTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IndexOperation.ramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.jd.*" />
+          <option name="PATTERN" value="com.jd.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="alesticsearch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jd" />
-      <option name="MAIN_CLASS_NAME" value="com.jd.AppTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.jd.base" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.base.IndexOperation" />
+      <option name="METHOD_NAME" value="ramTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -533,19 +527,69 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Demo.analyzeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IndexOperation.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.jd.analyzer.*" />
+          <option name="PATTERN" value="com.jd.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="alesticsearch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jd.analyzer" />
-      <option name="MAIN_CLASS_NAME" value="com.jd.analyzer.Demo" />
-      <option name="METHOD_NAME" value="analyzeTest" />
+      <option name="PACKAGE_NAME" value="com.jd.base" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.base.IndexOperation" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="IndexOperation.write" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jd.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="alesticsearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jd.base" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.base.IndexOperation" />
+      <option name="METHOD_NAME" value="write" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RAMTest.ramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jd.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="alesticsearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jd.base" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.base.RAMTest" />
+      <option name="METHOD_NAME" value="ramTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -618,18 +662,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
-      <item index="1" class="java.lang.String" itemvalue="Application.App" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Demo.analyzeTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.test" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.IndexOperation.write" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IndexOperation.merge" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IndexOperation.ramTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RAMTest.ramTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.IndexOperation.read" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Demo.analyzeTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.App" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.IndexOperation.read" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.IndexOperation.write" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RAMTest.ramTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.IndexOperation.ramTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.IndexOperation.merge" />
       </list>
     </recent_temporary>
   </component>
@@ -648,59 +694,64 @@
       <updated>1543719862675</updated>
       <workItem from="1543719868202" duration="13606000" />
       <workItem from="1544229392195" duration="10927000" />
-      <workItem from="1544354183270" duration="129000" />
+      <workItem from="1544354183270" duration="11025000" />
+      <workItem from="1544446429445" duration="2059000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_shouldAnswerWithTrue - 2018.12.02 at 12h 50m 30s.xml">
-      <configuration name="AppTest.shouldAnswerWithTrue" configurationId="JUnit" />
+    <history-entry file="IndexOperation_read - 2018.12.10 at 21h 16m 48s.xml">
+      <configuration name="IndexOperation.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2018.12.09 at 00h 04m 56s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="IndexOperation_read - 2018.12.10 at 21h 17m 10s.xml">
+      <configuration name="IndexOperation.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2018.12.09 at 00h 13m 20s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="IndexOperation_write - 2018.12.10 at 21h 16m 41s.xml">
+      <configuration name="IndexOperation.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2018.12.09 at 00h 19m 57s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="RAMTest_ramTest - 2018.12.10 at 21h 11m 06s.xml">
+      <configuration name="RAMTest.ramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2018.12.09 at 00h 20m 51s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="RAMTest_ramTest - 2018.12.10 at 21h 11m 50s.xml">
+      <configuration name="RAMTest.ramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2018.12.09 at 00h 26m 51s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="RAMTest_ramTest - 2018.12.10 at 21h 12m 10s.xml">
+      <configuration name="RAMTest.ramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Demo_analyzeTest - 2018.12.08 at 09h 22m 23s.xml">
-      <configuration name="Demo.analyzeTest" configurationId="JUnit" />
+    <history-entry file="ReaderAndWriter_ramTest - 2018.12.10 at 18h 08m 15s.xml">
+      <configuration name="ReaderAndWriter.ramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Demo_analyzeTest - 2018.12.08 at 09h 25m 31s.xml">
-      <configuration name="Demo.analyzeTest" configurationId="JUnit" />
+    <history-entry file="ReaderAndWriter_write - 2018.12.10 at 15h 10m 02s.xml">
+      <configuration name="ReaderAndWriter.write" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Demo_analyzeTest - 2018.12.08 at 09h 30m 15s.xml">
-      <configuration name="Demo.analyzeTest" configurationId="JUnit" />
+    <history-entry file="ReaderAndWriter_write - 2018.12.10 at 15h 10m 09s.xml">
+      <configuration name="ReaderAndWriter.write" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderAndWriter_write - 2018.12.10 at 15h 10m 18s.xml">
+      <configuration name="ReaderAndWriter.write" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24662000" />
+    <option name="totallyTimeSpent" value="37617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="683" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="683" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3681416" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -712,9 +763,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1699115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,106 +778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0.jar!/org/apache/lucene/index/IndexWriterConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="56" column="20" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/TieredMergePolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/ConcurrentMergeScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/MergeScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/MergePolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/IndexWriterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/LiveIndexWriterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="173" column="78" lean-forward="false" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/NIOFSDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/MMapDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="63" lean-forward="false" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/NativeFSLockFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/FSLockFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/Directory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/RAMDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/FSDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="126" column="26" lean-forward="false" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/SimpleFSDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -849,24 +799,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/7.5.0/lucene-queryparser-7.5.0-sources.jar!/org/apache/lucene/queryparser/classic/QueryParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/IndexReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/search/IndexSearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -941,17 +878,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/MyFIlter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -959,35 +890,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="399" column="5" lean-forward="false" selection-start-line="399" selection-start-column="5" selection-end-line="399" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/MyAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/IndexWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="1227" column="25" lean-forward="false" selection-start-line="1227" selection-start-column="11" selection-end-line="1227" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/car.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#16784#16785#0" expanded="false" />
+            <element signature="e#16809#16810#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,67 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7350">
           <caret line="515" column="23" lean-forward="false" selection-start-line="515" selection-start-column="23" selection-end-line="515" selection-end-column="23" />
-          <folding>
-            <marker date="1530690273000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1530690273000" expanded="false" signature="145:995" ph="..." />
-            <marker date="1530690273000" expanded="true" signature="1253:1260" ph="{}" />
-            <marker date="1530690273000" expanded="true" signature="1342:1818" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="1902:2502" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="2563:2972" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="3033:3376" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="3454:3533" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="3629:3985" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="4091:4973" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="5080:5158" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="5220:5423" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="5520:5890" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="5988:6066" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="6151:7234" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="7275:7918" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="7965:8551" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="8617:8788" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="8880:8940" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="9058:9451" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="9533:9583" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="9691:10845" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="10956:11892" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="11988:12638" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="12723:12776" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="12887:13654" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="13768:15014" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="15102:15462" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="15538:15811" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="15886:16893" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="16953:17438" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="17529:17788" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="17862:17922" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="17999:18251" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="18333:18591" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="18656:18709" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="18802:19167" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="19243:19299" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="19402:19621" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="19707:19767" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="19856:20056" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="20157:20221" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="20305:20373" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="20493:20730" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="20833:20899" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="20966:21363" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="21436:21579" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="21662:21796" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="21878:22891" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="22962:23405" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="23462:24344" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="24411:24762" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="24824:25009" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="25077:25324" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="25391:25742" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="25804:25989" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="26057:26304" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="26373:26473" ph="{...}" />
-            <marker date="1530690273000" expanded="true" signature="26560:27033" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,14 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/ReaderAndWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/IntPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1098,19 +935,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/StringField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/SortedDocValuesField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,27 +973,236 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/car.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/LongPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="105" column="9" lean-forward="false" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <element signature="e#3938#3939#0" expanded="false" />
+            <element signature="e#3995#3996#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/StringField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/MergePolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="197" column="22" lean-forward="false" selection-start-line="197" selection-start-column="22" selection-end-line="197" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/index/IndexWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="991" column="2" lean-forward="true" selection-start-line="991" selection-start-column="2" selection-end-line="991" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/RAMDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2828#2829#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/store/BaseDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-memory/7.5.0/lucene-memory-7.5.0.jar!/org/apache/lucene/index/memory/MemoryIndex.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="98" column="31" lean-forward="false" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/7.5.0/lucene-queryparser-7.5.0-sources.jar!/org/apache/lucene/queryparser/classic/QueryParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="93" column="10" lean-forward="false" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-memory/7.5.0/lucene-memory-7.5.0-sources.jar!/org/apache/lucene/index/memory/MemoryIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="679" column="15" lean-forward="false" selection-start-line="679" selection-start-column="15" selection-end-line="679" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2941">
+          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding>
+            <element signature="e#2705#2706#0" expanded="false" />
+            <element signature="e#2732#2733#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/search/ScoreDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/search/TopDocs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/search/IndexSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="455" column="17" lean-forward="false" selection-start-line="455" selection-start-column="17" selection-end-line="455" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/BaseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/MemoryIndexTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/7.5.0/lucene-core-7.5.0-sources.jar!/org/apache/lucene/document/Document.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/RAMTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="38" column="3" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        <state relative-caret-position="-40">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="23" />
           <folding>
-            <element signature="e#2705#2706#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jd/BaseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jd/LoadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="555">
+            <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/MyAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/analyzer/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="88" lean-forward="false" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/IndexOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/AllKindsQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="142" lean-forward="false" selection-start-line="4" selection-start-column="142" selection-end-line="4" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jd/base/OurScores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="103" lean-forward="false" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>

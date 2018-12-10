@@ -1,8 +1,11 @@
 package com.jd.base;
 
 
+import com.jd.BaseOperation;
+import com.jd.LoadData;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
@@ -19,11 +22,16 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class ReaderAndWriter {
+/**
+ * https://lucene.apache.org/core/7_2_1/core/org/apache/lucene/codecs/lucene70/package-summary.html#package.description
+ */
+public class IndexOperation extends BaseOperation{
 
     private String indexFilePath;
     private Analyzer analyzer;
     private Directory dir;
+
+    private LoadData loadData;
 
     // writer相关
 
@@ -36,31 +44,39 @@ public class ReaderAndWriter {
         analyzer = new StandardAnalyzer();
         dir = FSDirectory.open(Paths.get(this.indexFilePath));
 
-        this.defaultField = "title";
+        this.defaultField = "modelName";
+
+        loadData = new LoadData();
     }
+
+
+
+
 
     @Test
     public void write() throws IOException {
-        IndexWriter indexWriter = this.buildWriter();
+        try(IndexWriter indexWriter = this.buildWriter();){
+            List<Document> docs = loadData.readDocs();
+            indexWriter.addDocuments(docs);
+            indexWriter.commit();
+            indexWriter.flush();
+        }
 
 
     }
 
-    /**
-     *
-     * searcher 调用链
-     * {@link IndexSearcher#search(Query, int)}
-     * {@link IndexSearcher#searchAfter(ScoreDoc, Query, int)}
-     * {@link IndexSearcher#search(Query, CollectorManager)}
-     * {@link IndexSearcher#search(Query, CollectorManager)}
-     * {@link IndexSearcher#search(List, Weight, Collector)}
-     *
-     *
-     * @throws ParseException
-     */
+
+    @Test
+    public void merge() throws IOException {
+        try(IndexWriter indexWriter = this.buildWriter();){
+            indexWriter.forceMerge(1);
+            indexWriter.close();
+        }
+    }
+
     @Test
     public void read() throws ParseException, IOException {
-        String testQueryString = "hello world";
+        String testQueryString = "现代";
 
         try(IndexReader reader = DirectoryReader.open(dir)){
             IndexSearcher searcher = new IndexSearcher(reader);
@@ -68,33 +84,15 @@ public class ReaderAndWriter {
             Query query = parser.parse(testQueryString);
             TopDocs topDocs = searcher.search(query, 5);
 
+            this.parseTopDocs(topDocs, searcher, "id", "brandId", "modelName", "modelPrefix", "modelId", "brandName", "brandPrefix");
+
+
         }
 
 
     }
 
-    /**
-     * {@link IndexWriterConfig}
-     * {@link Analyzer}
-     * {@link Directory}
-     * {@link }
-     * {@link FSDirectory} three class implements,  {@link org.apache.lucene.store.SimpleFSDirectory}, {@link org.apache.lucene.store.MMapDirectory}, {@link org.apache.lucene.store.NIOFSDirectory}
-     * {@link FSDirectory#open} auto choose best fsdDirectory
-     *
-     *
-     * {@link org.apache.lucene.index.LiveIndexWriterConfig}
-     * merge相关
-     * {@link org.apache.lucene.index.MergeScheduler}
-     * {@link org.apache.lucene.index.MergePolicy}
-     *
-     * flush
-     * {@link org.apache.lucene.index.FlushPolicy}
-     * {@link org.apache.lucene.index.LiveIndexWriterConfig#setRAMBufferSizeMB}
-     * {@link org.apache.lucene.index.LiveIndexWriterConfig#setMaxBufferedDocs}
-     * {@link IndexWriterConfig#DEFAULT_RAM_BUFFER_SIZE_MB}
-     *
-     * @return
-     */
+
     private IndexWriter buildWriter() throws IOException {
         IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
         iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);
