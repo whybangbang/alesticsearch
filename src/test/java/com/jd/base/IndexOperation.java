@@ -6,13 +6,13 @@ import com.jd.LoadData;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.*;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.*;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.Before;
@@ -24,6 +24,13 @@ import java.util.List;
 
 /**
  * https://lucene.apache.org/core/7_2_1/core/org/apache/lucene/codecs/lucene70/package-summary.html#package.description
+ * https://segmentfault.com/q/1010000000585404
+ *
+ * lock没有删除的问题
+ * 索引为String field query parse查不到的问题
+ * LongPoint 数据为null的问题
+ *
+ *
  */
 public class IndexOperation extends BaseOperation{
 
@@ -54,14 +61,17 @@ public class IndexOperation extends BaseOperation{
 
 
     @Test
-    public void write() throws IOException {
-        try(IndexWriter indexWriter = this.buildWriter();){
-            List<Document> docs = loadData.readDocs();
-            indexWriter.addDocuments(docs);
-            indexWriter.commit();
-            indexWriter.flush();
-        }
+    public void write() {
 
+        try {
+            IndexWriter indexWriter = this.buildWriter();
+            List<Document> docs = loadData.readDocs2();
+            indexWriter.addDocuments(docs);
+            indexWriter.close();
+        } catch (IOException e) {
+            System.out.print("xxx");
+            e.printStackTrace();
+        }
 
     }
 
@@ -70,26 +80,28 @@ public class IndexOperation extends BaseOperation{
     public void merge() throws IOException {
         try(IndexWriter indexWriter = this.buildWriter();){
             indexWriter.forceMerge(1);
-            indexWriter.close();
         }
     }
 
     @Test
     public void read() throws ParseException, IOException {
-        String testQueryString = "现代";
+        QueryParser parser = new QueryParser("modelName", analyzer);
+        Query query = parser.parse("高尔夫");
+        this.myReader(dir, query);
+    }
+
+    @Test
+    public void termRead() throws IOException{
+        String testQueryString = "高";
 
         try(IndexReader reader = DirectoryReader.open(dir)){
             IndexSearcher searcher = new IndexSearcher(reader);
-            QueryParser parser = new QueryParser(this.defaultField, analyzer);
-            Query query = parser.parse(testQueryString);
-            TopDocs topDocs = searcher.search(query, 5);
-
+            TermQuery query = new TermQuery(new Term("modelName", testQueryString));
+            TopDocs topDocs = searcher.search(query, 10);
             this.parseTopDocs(topDocs, searcher, "id", "brandId", "modelName", "modelPrefix", "modelId", "brandName", "brandPrefix");
 
 
         }
-
-
     }
 
 
