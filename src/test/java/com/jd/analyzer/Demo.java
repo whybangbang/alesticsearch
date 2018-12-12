@@ -25,7 +25,7 @@ public class Demo {
     @Test
     public void analyzeTest() throws IOException {
         analyzer = new StandardAnalyzer();
-        String text = "some text goes here";
+        String text = "高尔夫";
         this.analysis(analyzer, text);
     }
 

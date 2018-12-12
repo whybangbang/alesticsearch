@@ -45,22 +45,65 @@ public class AllKindsQuery extends IndexOperation {
 
    @Test
    public void phraseQueryTest() throws IOException, ParseException {
-      PhraseQuery query = new PhraseQuery("modelName", "高尔");
-      myReader(dir, query);
+//       PhraseQuery.Builder builder = new PhraseQuery.Builder();
+//       builder.add(new Term("modelName", "高"), 0);
+//       builder.add(new Term("modelName", "尔"), 1);
+//       PhraseQuery pq = builder.build();
+
+
+       PhraseQuery phraseQuery = new PhraseQuery("modelName", "高", "尔");
+//       PhraseQuery phraseQuery = new PhraseQuery("modelName", "高尔");
+       myReader(dir, phraseQuery);
    }
 
+    /**
+     * 这个不仅排除掉了"上汽"也排除掉了"一汽"
+     * @throws ParseException
+     * @throws IOException
+     */
    @Test
    public void queryParserTest() throws ParseException, IOException {
       QueryParser parser = new QueryParser("brandName", new StandardAnalyzer());
-      Query query = parser.parse("一汽大众");
+      Query query = parser.parse("大众 NOT 上汽");
       myReader(dir, query);
    }
 
+    /**
+     * 这个一汽就出现了
+     * @throws IOException
+     * @throws ParseException
+     */
+   @Test
    public void queryParserTest2() throws IOException, ParseException {
       QueryParser parser = new QueryParser("brandName", new StandardAnalyzer());
-      Query query = parser.parse("一汽大众");
+      Query query = parser.parse("大众 NOT \"上汽\"");
       myReader(dir, query);
    }
+
+    /**
+     * 这样也可以只排除掉"上汽",留下"一汽",但竟然还有众泰
+     * @throws IOException
+     * @throws ParseException
+     */
+    @Test
+    public void queryParserTest3() throws IOException, ParseException {
+        QueryParser parser = new QueryParser("brandName", new StandardAnalyzer());
+        Query query = parser.parse("大众 NOT 上");
+        myReader(dir, query);
+    }
+
+    /**
+     * 这样就排除掉了众泰,但这种操作利用的是phrase, 麻烦而且好性能
+     * 解决办法还是用空间换时间，提前处理，引入中文分词器
+     * @throws IOException
+     * @throws ParseException
+     */
+    @Test
+    public void queryParserTest4() throws IOException, ParseException {
+        QueryParser parser = new QueryParser("brandName", new StandardAnalyzer());
+        Query query = parser.parse("\"大众\" NOT 上");
+        myReader(dir, query);
+    }
 
 
 }

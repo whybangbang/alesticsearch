@@ -20,7 +20,7 @@ public class BaseOperation {
         try(IndexReader reader = DirectoryReader.open(dir)){
             IndexSearcher searcher = new IndexSearcher(reader);
 
-            TopDocs topDocs = searcher.search(query, 10);
+            TopDocs topDocs = searcher.search(query, 100);
 
             this.parseTopDocs(topDocs, searcher, "id", "brandId", "modelName", "modelPrefix", "modelId", "brandName", "brandPrefix");
 
