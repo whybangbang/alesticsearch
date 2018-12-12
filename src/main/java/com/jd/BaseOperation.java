@@ -1,5 +1,7 @@
 package com.jd;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
@@ -9,10 +11,19 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
+import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.IOException;
 
 public class BaseOperation {
+
+    protected Analyzer analyzer;
+
+    {
+        analyzer = new StandardAnalyzer();
+
+        analyzer = new IKAnalyzer();
+    }
 
 
     protected void myReader(Directory dir, Query query) throws IOException, ParseException {

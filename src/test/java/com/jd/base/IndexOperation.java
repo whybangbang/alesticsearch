@@ -3,8 +3,6 @@ package com.jd.base;
 
 import com.jd.BaseOperation;
 import com.jd.LoadData;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.*;
 import org.apache.lucene.queryparser.classic.ParseException;
@@ -35,23 +33,17 @@ import java.util.List;
 public class IndexOperation extends BaseOperation{
 
     private String indexFilePath;
-    private Analyzer analyzer;
+
     private Directory dir;
 
     private LoadData loadData;
 
     // writer相关
 
-    // reader相关
-    private String defaultField;
-
     @Before
     public void setUp() throws IOException {
         this.indexFilePath = "/Users/why/Desktop/lucene/baseDir";
-        analyzer = new StandardAnalyzer();
         dir = FSDirectory.open(Paths.get(this.indexFilePath));
-
-        this.defaultField = "modelName";
 
         loadData = new LoadData();
     }
