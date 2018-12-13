@@ -50,6 +50,7 @@ public class MySimilarity extends Similarity {
     public SimScorer simScorer(SimWeight weight, LeafReaderContext context) throws IOException {
 
 
+
         System.out.println("------------- " + context.reader().docFreq(new Term("modelName", "众")));
 //        context.reader().getFieldInfos();
 //        context.leaves().get(0).reader()
@@ -60,11 +61,6 @@ public class MySimilarity extends Similarity {
         final NumericDocValues values =
                 context.reader().getNumericDocValues("brandId");
 
-
-        if(values != null){
-//            System.out.println("+++++++++++++++++++++=    " + values.advance());
-        }
-        long filedValue = 1000;
         return new SimScorer() {
             @Override
             public float score(int doc, float freq) throws IOException {
