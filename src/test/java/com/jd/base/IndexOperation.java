@@ -12,6 +12,7 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.Before;
@@ -108,7 +109,7 @@ public class IndexOperation extends BaseOperation{
     private IndexWriter buildWriter2() throws IOException {
         IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
         iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);
-        iwc.setSimilarity(new MySimilarity());
+        iwc.setSimilarity(new MySimilarity(new BM25Similarity()));
         IndexWriter writer = new IndexWriter(dir, iwc);
         return writer;
     }

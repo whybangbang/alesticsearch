@@ -3,6 +3,7 @@ package com.jd.sort;
 import org.apache.lucene.index.FieldInvertState;
 import org.apache.lucene.index.LeafReaderContext;
 import org.apache.lucene.index.NumericDocValues;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.search.CollectionStatistics;
 import org.apache.lucene.search.TermStatistics;
 import org.apache.lucene.search.similarities.Similarity;
@@ -23,6 +24,11 @@ import java.io.IOException;
  */
 public class MySimilarity extends Similarity {
 
+    private Similarity sim = null;
+    public MySimilarity(Similarity sim) {
+        this.sim = sim;
+    }
+
     /**
      * Indexing Time At indexing time, the indexer calls computeNorm(FieldInvertState), allowing the Similarity implementation to set a per-document value for the field that will be later accessible via LeafReader.getNormValues(String)
      * @param state
@@ -30,43 +36,49 @@ public class MySimilarity extends Similarity {
      */
     @Override
     public long computeNorm(FieldInvertState state) {
-        return 0;
+        return sim.computeNorm(state);
     }
 
     @Override
     public SimWeight computeWeight(float boost, CollectionStatistics collectionStats, TermStatistics... termStats) {
 
-        return null;
+        return sim.computeWeight(boost, collectionStats,
+                termStats);
     }
 
     @Override
     public SimScorer simScorer(SimWeight weight, LeafReaderContext context) throws IOException {
-        NumericDocValues numericDocValues = context.reader().getNumericDocValues("brandId");
-        System.out.println("simScorer " + numericDocValues.docID());
-        return new MyScorer(numericDocValues.longValue());
+
+
+        System.out.println("------------- " + context.reader().docFreq(new Term("modelName", "众")));
+        context.leaves()
+
+        final Similarity.SimScorer scorer =
+                sim.simScorer(weight, context);
+        final NumericDocValues values =
+                context.reader().getNumericDocValues("brandId");
+
+        if(values != null){
+            System.out.println("+++++++++++++++++++++=    " + values.docID() );
+        }
+        long filedValue = 1000;
+        return new SimScorer() {
+            @Override
+            public float score(int doc, float freq) throws IOException {
+                return filedValue * scorer.score(doc, freq);
+            }
+
+            @Override
+            public float computeSlopFactor(int distance) {
+                return scorer.computeSlopFactor(distance);
+            }
+
+            @Override
+            public float computePayloadFactor(int doc, int start, int end, BytesRef payload) {
+                return scorer.computePayloadFactor(doc, start, end,
+                        payload);
+            }
+        };
     }
 
-    class MyScorer extends SimScorer{
-
-        private long fieldValue;
-
-        public MyScorer(long fieldValue){
-            this.fieldValue = fieldValue;
-        }
-
-        @Override
-        public float score(int doc, float freq) throws IOException {
-            return fieldValue;
-        }
-
-        @Override
-        public float computeSlopFactor(int distance) {
-            return 0;
-        }
-
-        @Override
-        public float computePayloadFactor(int doc, int start, int end, BytesRef payload) {
-            return 0;
-        }
-    }
 }

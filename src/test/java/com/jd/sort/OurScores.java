@@ -6,7 +6,10 @@ import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.*;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.Before;
@@ -61,7 +64,7 @@ public class OurScores extends BaseOperation {
         try(IndexReader reader = DirectoryReader.open(dir)){
             IndexSearcher searcher = new IndexSearcher(reader);
 
-            searcher.setSimilarity(new MySimilarity());
+            searcher.setSimilarity(new MySimilarity(new BM25Similarity()));
 
             QueryParser parser = new QueryParser("brandName", new StandardAnalyzer());
             Query query = parser.parse("大众 OR 上汽");
