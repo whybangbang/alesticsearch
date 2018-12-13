@@ -51,21 +51,26 @@ public class MySimilarity extends Similarity {
 
 
         System.out.println("------------- " + context.reader().docFreq(new Term("modelName", "众")));
-        context.leaves()
+//        context.reader().getFieldInfos();
+//        context.leaves().get(0).reader()
+
 
         final Similarity.SimScorer scorer =
                 sim.simScorer(weight, context);
         final NumericDocValues values =
                 context.reader().getNumericDocValues("brandId");
 
+
         if(values != null){
-            System.out.println("+++++++++++++++++++++=    " + values.docID() );
+//            System.out.println("+++++++++++++++++++++=    " + values.advance());
         }
         long filedValue = 1000;
         return new SimScorer() {
             @Override
             public float score(int doc, float freq) throws IOException {
-                return filedValue * scorer.score(doc, freq);
+                values.advanceExact(doc);
+//                return filedValue * scorer.score(doc, freq);
+                return values.longValue();
             }
 
             @Override
