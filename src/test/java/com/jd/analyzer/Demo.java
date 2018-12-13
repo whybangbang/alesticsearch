@@ -7,13 +7,12 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 import org.junit.Test;
-import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * https://lucene.apache.org/core/7_2_1/core/org/apache/lucene/analysis/package-summary.html#package.description
@@ -35,9 +34,12 @@ public class Demo {
 
         //改完用luka看看
         //更改了词库再看看效果
-        analyzer = new IKAnalyzer();
+//        analyzer = new IKAnalyzer();
+
+//        analyzer = new EnglishAnalyzer();
 
         String text = "电子产品";
+        text = "i wish to buy a iphone";
         this.analysis(analyzer, text);
 
 

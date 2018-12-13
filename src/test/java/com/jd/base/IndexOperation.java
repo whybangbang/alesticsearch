@@ -61,6 +61,8 @@ public class IndexOperation extends BaseOperation{
             IndexWriter indexWriter = this.buildWriter2();
             List<Document> docs = loadData.readDocs3();
             indexWriter.addDocuments(docs);
+
+            // commit 的作用
             indexWriter.close();
         } catch (IOException e) {
             System.out.print("xxx");
