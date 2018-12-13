@@ -2,12 +2,14 @@ package com.jd.query;
 
 import com.jd.base.IndexOperation;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.LongPoint;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.BytesRef;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -39,7 +41,7 @@ public class AllKindsQuery extends IndexOperation {
       builder.add(new TermQuery(new Term("modelName", "高")), BooleanClause.Occur.MUST);
       // 这个就不行因为QueryParser默认是 or关系
 //      builder.add(new QueryParser("brandName", new StandardAnalyzer()).parse("一汽大众"), BooleanClause.Occur.MUST_NOT);
-      builder.add(new QueryParser("brandName", new StandardAnalyzer()).parse("一"), BooleanClause.Occur.MUST_NOT);
+//      builder.add(new QueryParser("brandName", new StandardAnalyzer()).parse("一"), BooleanClause.Occur.MUST_NOT);
       myReader(dir, builder.build());
    }
 
@@ -106,4 +108,25 @@ public class AllKindsQuery extends IndexOperation {
     }
 
 
+
+    @Test
+    public void termRangeQueryTest() throws IOException, ParseException {
+//        Query query = new TermRangeQuery("modelPrefix", new BytesRef("x"), new BytesRef("x"), true, true);
+        Query query = new TermRangeQuery("brandName", new BytesRef("吉"), new BytesRef("雷"), true, true);
+        myReader(dir, query);
+    }
+
+    @Test
+    public void pointRangeQueryTest() throws IOException, ParseException {
+        Query query = LongPoint.newRangeQuery("brandId", 2, 3);
+        myReader(dir, query);
+    }
+
+    // The WildcardQuery generalizes this by allowing for the use of * (matches 0 or more characters) and ? (matches exactly one character) wildcards. Note that the WildcardQuery can be quite slow.
+    //The WildcardQuery generalizes this by allowing for the use of * (matches 0 or more characters) and ? (matches exactly one character) wildcards. Note that the WildcardQuery can be quite slow.
+    @Test
+    public void wildcardQueryTest() throws IOException, ParseException {
+        Query query = new WildcardQuery(new Term("modelName", "fj*"));
+        myReader(dir, query );
+    }
 }

@@ -117,6 +117,7 @@ public class LoadData {
      * @throws IOException
      */
     public List<Document> readDocs3() throws IOException {
+        System.out.println("load data 3");
 
         FieldType fieldType = new FieldType();
         fieldType.setStored(true);
@@ -138,6 +139,8 @@ public class LoadData {
 
             Field id, brandId, modelName, modelPrefix, modelId, brandName, brandPrefix;
             Field idStrore, brandIdStore, modelIdStore;
+            Field modelIdSort;
+            Field brandIdDocValue;
 
             Document doc = new Document();
 
@@ -146,12 +149,14 @@ public class LoadData {
 
             brandId = new LongPoint("brandId", Long.parseLong(ss[1]));
             brandIdStore = new StoredField("brandId", Long.parseLong(ss[1]));
+            brandIdDocValue = new NumericDocValuesField("brandId", Long.parseLong(ss[1]));
 
             modelName = new TextField("modelName", ss[2], Field.Store.YES);
             modelPrefix = new TextField("modelPrefix", ss[3], Field.Store.YES);
 
             modelId = new LongPoint("modelId", Long.parseLong(ss[4]));
             modelIdStore = new StoredField("modelId", Long.parseLong(ss[4]));
+            modelIdSort = new SortedNumericDocValuesField("modelId", Long.parseLong(ss[4]));
 
 
             brandName = new Field("brandName", ss[5], fieldType);
@@ -168,6 +173,9 @@ public class LoadData {
 
             doc.add(modelId);
             doc.add(modelIdStore);
+            doc.add(modelIdSort);
+
+            doc.add(brandIdDocValue);
 
             doc.add(brandName);
             doc.add(brandPrefix);

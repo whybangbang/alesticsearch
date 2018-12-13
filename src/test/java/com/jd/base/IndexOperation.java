@@ -3,6 +3,7 @@ package com.jd.base;
 
 import com.jd.BaseOperation;
 import com.jd.LoadData;
+import com.jd.sort.MySimilarity;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.*;
 import org.apache.lucene.queryparser.classic.ParseException;
@@ -56,8 +57,8 @@ public class IndexOperation extends BaseOperation{
     public void write() {
 
         try {
-            IndexWriter indexWriter = this.buildWriter();
-            List<Document> docs = loadData.readDocs2();
+            IndexWriter indexWriter = this.buildWriter2();
+            List<Document> docs = loadData.readDocs3();
             indexWriter.addDocuments(docs);
             indexWriter.close();
         } catch (IOException e) {
@@ -90,7 +91,7 @@ public class IndexOperation extends BaseOperation{
             IndexSearcher searcher = new IndexSearcher(reader);
             TermQuery query = new TermQuery(new Term("modelName", testQueryString));
             TopDocs topDocs = searcher.search(query, 10);
-            this.parseTopDocs(topDocs, searcher, "id", "brandId", "modelName", "modelPrefix", "modelId", "brandName", "brandPrefix");
+            this.parseTopDocs(topDocs, searcher, query,"id", "brandId", "modelName", "modelPrefix", "modelId", "brandName", "brandPrefix");
 
 
         }
@@ -100,6 +101,14 @@ public class IndexOperation extends BaseOperation{
     private IndexWriter buildWriter() throws IOException {
         IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
         iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);
+        IndexWriter writer = new IndexWriter(dir, iwc);
+        return writer;
+    }
+
+    private IndexWriter buildWriter2() throws IOException {
+        IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
+        iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);
+        iwc.setSimilarity(new MySimilarity());
         IndexWriter writer = new IndexWriter(dir, iwc);
         return writer;
     }

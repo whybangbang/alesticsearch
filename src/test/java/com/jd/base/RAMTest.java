@@ -46,7 +46,7 @@ public class RAMTest extends BaseOperation{
         Query query = parser.parse("text");
         TopDocs topDocs = isearcher.search(query, 1000);
 
-        this.parseTopDocs(topDocs, isearcher, "fieldname");
+        this.parseTopDocs(topDocs, isearcher, query,"fieldname");
         // Iterate through the results:
         ireader.close();
         directory.close();
