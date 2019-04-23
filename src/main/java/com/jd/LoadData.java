@@ -184,4 +184,20 @@ public class LoadData {
 
         return docs;
     }
+
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public List<Document> readDocs4() throws IOException {
+        System.out.println("load data 4");
+
+        List<Document> docs = new ArrayList<>();
+        Field id = new LongPoint("id", 12345634);
+        Document doc = new Document();
+        doc.add(id);
+        docs.add(doc);
+        return docs;
+    }
 }

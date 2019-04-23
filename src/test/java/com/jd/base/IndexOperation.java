@@ -59,11 +59,24 @@ public class IndexOperation extends BaseOperation{
 
         try {
             IndexWriter indexWriter = this.buildWriter2();
-            List<Document> docs = loadData.readDocs3();
+            List<Document> docs = loadData.readDocs4();
             indexWriter.addDocuments(docs);
 
             // commit 的作用
-            indexWriter.close();
+//            indexWriter.close();
+        } catch (IOException e) {
+            System.out.print("xxx");
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test
+    public void commit() {
+
+        try {
+            IndexWriter indexWriter = this.buildWriter2();
+           indexWriter.commit();
         } catch (IOException e) {
             System.out.print("xxx");
             e.printStackTrace();
